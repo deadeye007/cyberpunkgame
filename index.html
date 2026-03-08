@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Neon Divide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Rajdhani:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <main class="app-shell">
+      <header class="top-bar">
+        <p class="eyebrow">Choose Your Own Adventure</p>
+        <h1>Neon Divide</h1>
+      </header>
+
+      <section class="status-panel" aria-label="Player status">
+        <p><span>Cred</span><strong id="stat-cred">0</strong></p>
+        <p><span>Heat</span><strong id="stat-heat">0</strong></p>
+        <p><span>Humanity</span><strong id="stat-humanity">0</strong></p>
+      </section>
+
+      <article class="scene-card" aria-live="polite">
+        <h2 id="scene-title"></h2>
+        <p id="scene-text"></p>
+        <div id="choice-list" class="choice-list"></div>
+      </article>
+
+      <div class="controls">
+        <button id="back-btn" class="ghost-btn" type="button">Back</button>
+        <button id="restart-btn" class="ghost-btn" type="button">Restart</button>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
