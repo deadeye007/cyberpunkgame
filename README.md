@@ -20,6 +20,27 @@ python3 -m http.server 8080
 
 Then visit `http://localhost:8080`.
 
+## Run With Docker
+Build the image:
+
+```bash
+docker build -t neon-divide .
+```
+
+Run the container:
+
+```bash
+docker run --rm -p 8080:80 --name neon-divide neon-divide
+```
+
+Then visit `http://localhost:8080`.
+
+Stop it:
+
+```bash
+docker stop neon-divide
+```
+
 ## Content Structure
 Story data is in `app.js` inside `STORY`.
 
